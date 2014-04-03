@@ -19,8 +19,8 @@ describe "UserPages" do
       it "should create a new user" do
         fill_in "Name",     with: "Nguyen Tien Hoang"
         fill_in "Email",    with: "tienhoangna@gmail.com"
-        fill_in "Password", with: "foobar"
-        fill_in "Confirmation", with: "foobar"
+        fill_in "Password", with: "abcdef"
+        fill_in "Confirmation", with: "abcdef"
 
         expect do 
           click_button "Create my account"
