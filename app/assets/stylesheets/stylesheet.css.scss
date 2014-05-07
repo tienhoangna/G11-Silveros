@@ -1,0 +1,428 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;	
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@font-face{
+	font-family: Vera;
+	src: url(../font/Vera.ttf);
+}
+
+body{
+	font-family: Vera;
+	color: #6f6c6c;
+	font-size: 15px;
+}
+
+#all{
+	width: 1300px;
+	height: 1510px;
+	background: url(../images/Main-background.png) no-repeat;
+	margin: auto;
+}
+
+#wrapper{
+	width: 1200px;
+	height: 1410px;
+	margin: auto;
+}
+
+#header{
+	margin-left: 1px;
+	width: 1200px;
+	height: 58px;
+	background: url(../images/Header-background.png) no-repeat;
+	position: fixed;
+}
+
+#header form{
+	margin-left: 500px;
+}
+
+#searchBar{
+	width: 397px;
+	height: 33px;
+	background: url(../images/Search-bar.png) no-repeat;
+	text-align: center;
+	margin-top: 10px;
+	outline: none;
+	font-family: Vera;
+	color: #6f6c6c;
+}
+
+#searchIcon{
+	width: 45px;
+	height: 33px;
+	margin-left: 1px;
+	margin-top: 10px;
+	position: absolute;	
+}
+
+#menuAndPartnerTitle{
+	margin-left: 2px;
+	width: 1200px;
+	height: 42px;
+	background: url(../images/Menu-background.png) no-repeat;
+	position: fixed;
+	margin-top: 58px;
+}
+
+#menuCategories{
+	width: 1024px;
+	height: 100%;
+	margin-left: 80px;
+}
+
+#myMenu{
+	width: 672px;
+	height: 100%;
+	float: left;
+	line-height: 33px;
+}
+
+#partnerTitle{
+	width: 352px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 33px;
+}
+
+#myMenu li{
+	list-style: none;
+	float: left;
+	height: 20px;
+	opacity: 0.8;
+}
+
+#myMenu li:hover{
+	opacity: 1;	
+}
+
+.menu{
+	padding-right: 20px;
+}
+
+#myMenu a{
+	text-decoration: none;
+	color: 	#787575;
+	font-size: 17.5px;
+}
+
+.community{
+	height: 34px;
+	padding-top: 2px;
+	padding-left: 50px;
+	padding-right: 5px;
+}
+
+#partnerTitle li{
+	list-style: none;
+	float: left;
+	opacity: 0.8;	
+}
+
+#partnerTitle li:hover{
+	opacity: 1;	
+}
+
+#partnerTitle a{
+	text-decoration: none;
+	color: 	#787575;
+	font-size: 17.5px;
+}
+
+#spaceFromTop{
+	height: 91px;
+	width: 100%;	
+}
+
+#workSpace{
+	width: 1045px;
+	margin-left: 80px;	
+}
+
+#mine{
+	width: 645px;
+	float: left;
+}
+
+#partner{
+	width: 395px;
+	float: left;
+	margin-left: 3px;	
+}
+
+#coverPhoto{
+	width: 608px;
+	height: 249px;
+	background: url(../images/myCover.jpg);
+}
+
+#nameAndAvatar{
+	width: 608px;
+	height: 115px;
+	margin-top: -60px;
+}
+
+.myName{
+	width: 430px;
+	height: 115px;	
+	line-height: 180px;
+	text-align: right;
+	float: left;
+	font-size: 17.5px;
+}
+
+.myAvatar{
+	width: 131px;
+	height: 115px;
+	float: left;
+	margin-left: 20px;
+	border: 4px solid #f1f1f1;
+}
+
+#myStatus{
+	width: 622px;
+	margin-top: 30px;	
+}
+
+.statusTitle{
+	width: 500px;
+	height: 35px;
+	background: url(../images/status-title.png) no-repeat;
+	line-height: 30px;	
+}
+
+.statusTitle a{
+	text-decoration: none;
+	color: #787575;
+}
+
+.statusTitle li{
+	margin-left: 37px;
+	list-style: none;
+	float: left;
+	padding-right: 35px;	
+}
+
+.typingArea{
+	width: 620px;
+	height: 55px;
+	background: url(../images/typing-area.png) no-repeat;	
+}
+
+.typingArea textarea{
+	background: none;
+	outline: none;
+	resize: none;
+	text-align: left;
+	color: #787575;
+	display: none;
+}
+
+#postButton{
+	width: 80px;
+	height: 30px;
+	margin-left: 538px;	
+	opacity: 0.8;
+}
+
+#postButton:hover{
+	opacity: 0.9;	
+}
+
+#updatedStatus{
+	width: 600px;
+}
+
+.updatedStatusTitle{
+	height: 130px;
+	background: url(../images/update-status-title.png) no-repeat;	
+}
+
+.updatedStatusAvatar{
+	width: 131px;
+	height: 115px;
+	float: left;
+	border: 4px solid #f1f1f1;
+}
+
+.updatedStatusName{
+	height: 123px;
+	line-height: 160px;
+	float: left;
+	margin-left: 10px;
+}
+
+.updatedHerStatus{
+	float: left;
+	height: 123px;
+	line-height: 165px;
+	margin-left: 60px;
+}
+
+.updatedStatusArea{
+	width: 	625px;
+	height: 550px;
+	background: url(../images/update-status-area.png) no-repeat;
+}
+
+.scrollArea{
+	width: 580px;
+	height: 500px;
+	margin-left: 15px;
+	overflow: auto;
+}
+
+#separateLine{
+	margin-top: -10px;
+}
+
+#partnerCover{
+	width: 376px;
+	height: 247px;
+	background: url(../images/Partner-cover.png);
+}
+
+#partnerAvartarAndName{
+	margin-top: -60px;
+}
+
+#partnerAvatar{
+	width: 132px;
+	height: 115px;
+	border: 4px solid #f1f1f1;
+	float: left;
+	margin-left: 20px;
+}
+
+#partnerName{
+	float: left;
+	width: 200px;
+	height: 123px;
+	line-height: 180px;
+	font-size: 18px;
+	text-align: right;
+}
+
+#partnerStatus{
+	width: 390px;
+	height: 394px;
+	background: url(../images/Partner-status.png);
+	margin-top: 130px;	
+}
+
+#meToYou, #youToMe{
+	width: 	385px;
+	height: 211px;
+	background: url(../images/me-to-you-background.png) no-repeat;
+}
+
+.nameToName{
+	width: 360px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+.nameToName li{
+	list-style: none;
+	float: left;
+	padding-right: 6px;	
+}
+
+.nameToName a{
+	text-decoration: none;
+	color: 	#6f6c6c;
+	font-family: Vera;
+}
+
+#slideShow{
+	width: 840px;
+	height: 155px;
+	margin-left: 50px;
+	margin-top: 35px;
+	float: left;
+}
+
+.leftArrow, .rightArrow{
+	float: left;
+	opacity: 0.8;	
+}
+
+.leftArrow:hover, .rightArrow:hover{
+	opacity: 1;	
+}
+
+.rightArrow{
+	margin-left: -8px;	
+}
+
+.photos{
+	float: left;
+	width: 755px;
+	height: 155px;
+	margin-left: 10px;
+}
+
+.each, .eachNext{
+	width: 188px;
+	height: 155px;
+	background: url(../images/each-photo.png);
+	float: left;	
+}
+
+.eachNext{
+	display: none;	
+}
+
+#album{
+	width: 220px;
+	height: 195px;
+	float: left;
+	margin-left: 20px;
+}
+
+.albumTitle{
+	width: 220px;
+	height: 36px;
+	background: url(../images/album-title.png) no-repeat;
+	line-height: 30px;
+}
+
+.eachAlbum{
+	width: 220px;
+	height: 31px;
+	background: url(../images/each-album.png) no-repeat;	
+	opacity: 0.7;
+	line-height: 25px;
+	font-size: 13px;
+}
+.eachAlbum:hover{
+	background: url(../images/each-album2.png) no-repeat;
+	opacity: 0.8;
+}
+
+#album a{
+	text-decoration: none;
+	color: #6f6c6c;	
+}
+
+.albumTitle a{
+	margin-left: 20px;
+}
+
+.eachAlbum a{
+	margin-left: 30px;	
+}
+
+#copyright{
+	margin-top: 230px;
+	margin-left: 980px;
+}

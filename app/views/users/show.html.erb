@@ -1,11 +1,209 @@
-<% provide(:title, @user.name) %>
-<div class="row">
-	<aside class="span4">
-		<section>
-			<h1>
-				<%= gravatar_for @user %>
-				<%= @user.name %>
-			</h1>
-		</section>
-	</aside>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/S-Logo.png"  />
+<link rel="stylesheets" type="text/css" href="stylesheets/stylesheet.css.scss" />
+<title>Silveros | Connects people, finds your love and makes you happy</title>
+<script type="text/javascript" src="javascripts/jquery-1.10.1.js"> </script>
+<script type="text/javascript" src="javascripts/javascript.js"> </script>
+</head>
+
+<body bgcolor="#d5d5d5">
+<div id="all">
+<div id="wrapper">
+	<div id="header"> <!-- Header contains Search bar, and Silveros logo -->
+    	<form action="abc.html" method="post"> <!-- This is the search bar-->
+        	<input id="searchBar" type="text" name="searchBar" value="Enter name you want to search..."/>
+        	<input id="searchIcon" type="image" src="images/search-icon.png"/> 
+        </form>
+    </div> <!-- End of header -->
+    
+    <div id="menuAndPartnerTitle"> <!-- This contains Menu bar and some text for partner title -->
+    	<div id="menuCategories">	<!-- This is menu bar -->
+            <div id="myMenu">
+            	<li class="menu"> <a href="#"> Home </a> </li>
+                <li class="menu"> <a href="#"> Message </a> </li>
+                <li class="menu"> <a href="#"> Friends </a> </li>
+                <li class="menu"> <a href="#"> About </a> </li>
+                <li class="community"> <a href="#"> <img src="images/Community.png" /> </a> </li>
+                <li> <a href="#"> Community </a> </li>
+            </div>
+            
+            <div id="partnerTitle">
+            	<li style="margin-left: 100px; padding-top: 4px;"> <a href="#"> <img src="images/Partner-title.png" /> </a> </li>
+            	<li style="padding-left: 5px;"> <a href="#"> Partner </a> </li>
+            </div>
+        </div>
+    </div>
+    
+    <div id="spaceFromTop"> <!-- There's nothing here, it's just a white space --> </div>
+    
+    <div id="workSpace"> <!-- This contains area for updating status, Updated status area of user and something of partner -->
+    	<div id="mine"> <!-- This is the area for user -->
+        	<div id="coverPhoto"> 
+            </div>
+            
+            <div id="nameAndAvatar">
+            	<div class="myName">
+               		— Christina.
+                </div>
+                
+                <div class="myAvatar">
+                	<a href="#"> <img src="images/myAvatar.jpg" /> </a>
+                </div>
+            </div>
+            
+            <div id="myStatus">
+            	<div class="statusTitle">
+                	<li> <a href="#"> Status </a> </li>
+                    <li> <a href="#"> Image </a> </li>
+                    <li style="padding-top: 3px;"> What's on your mind? </li>
+                </div>
+                
+        		<div class="typingArea">
+                	<div id="whiteSpace" style="width: 600px; height: 11px"></div>
+                    <textarea id="typing" rows="6" cols="74" autofocus="autofocus"></textarea>
+                </div>
+                
+                <div id="postButton">
+                	<img src="images/post-button.png" />
+                </div>
+            </div>
+            
+            <div id="updatedStatus">
+            	<div class="updatedStatusTitle">
+                	<div class="updatedStatusAvatar">
+                    	<img src="images/myAvatar.jpg" />
+                    </div>
+                    <div class="updatedStatusName">
+                    	— Christina.
+                    </div>
+                    <div class="updatedHerStatus">
+                    	Updated her status.
+                    </div>
+                </div>
+                
+                <div class="updatedStatusArea">
+                	<div class="updatedWhiteSpace" style="width: 100%; height: 20px"> <!-- There's nothing here, it's white space--> </div>
+                    <div class="scrollArea">
+                   
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Mine area -->
+        
+        <div id="partner"> <!-- Area for partner -->
+        	<div id="partnerCover">
+            </div>
+            
+            <div id="partnerAvartarAndName">
+                <div id="partnerName">
+                	— Adam.
+                </div>
+                
+                <div id="partnerAvatar">
+                    <a href="#"> <img src="images/Partner-avatar.png" /> </a>
+                </div>   
+            </div>
+            
+            <div id="partnerStatus">
+            </div>
+            
+            <div id="meToYou"> <!-- This is the part for something user sent to partner -->
+            	<div class="nameToName">
+                	<li> <a href="#"> Christina </a> </li>
+                    <li> to </li>
+                    <li> <a href="#"> Adam </a> </li>
+                </div>
+                
+                <div id="sentContent">
+                </div>
+            </div>
+            
+            <div id="youToMe"> <!-- This is the part for something partner sent to user -->
+            	<div class="nameToName">
+                	<li> <a href="#"> Adam </a> </li>
+                    <li> to </li>
+                    <li> <a href="#"> Christina </a> </li>
+                </div>
+                
+                <div id="sentContent">
+                </div>
+            </div>
+        </div> <!-- End of partner area -->
+    </div> <!-- End of Workspace -->
+    <img style="margin-left: 1px" src="images/separate-line.png" /> <!-- This is the Black and red line at the bottom of the page -->
+    <div id="footer">
+        <div id="slideShow"> <!-- This is slide to show smoe picture of user -->
+            <div class="leftArrow">
+                <img src="images/left-arrow.png" />
+            </div>
+            <div class="photos">
+                <div class="each">
+                	<a href="#"><img src="images/photo1.jpg" /></a>
+                </div>
+                <div class="each">
+                	<a href="#"><img src="images/photo2.jpg" /></a>
+                </div>
+                <div class="each">
+                	<a href="#"><img src="images/photo3.jpg" /></a>
+                </div>
+                <div class="each">
+                	<a href="#"><img src="images/photo4.jpg" /></a>
+                </div>
+                
+                <!-- ............... -->
+                
+                <div class="eachNext">
+                	<a href="#"><img src="images/photo1-2.jpg" /></a>
+                </div>
+                <div class="eachNext">
+                	<a href="#"><img src="images/photo2-2.jpg" /></a>
+                </div>
+                <div class="eachNext">
+                	<a href="#"><img src="images/photo3-2.jpg" /></a>
+                </div>
+                <div class="eachNext">
+                	<a href="#"><img src="images/photo4-2.jpg" /></a>
+                </div>
+            </div>
+            <div class="rightArrow">
+                <img src="images/right-arrow.png" />
+            </div>
+        </div> <!-- End of slideShow -->
+        
+        <div id="album">
+        	<div class="albumTitle">
+            	<a href="#"> Albums </a>
+            </div>
+            
+            <div class="eachAlbum">
+            	<a href="#"> Music is my soul. </a>
+            </div>
+            
+            <div class="eachAlbum">
+            	<a href="#"> Sometimes I'm lonely. </a>
+            </div>
+            
+            <div class="eachAlbum">
+            	<a href="#"> Yes, I'm a girl.</a>
+            </div>
+            
+            <div class="eachAlbum">
+            	<a href="#"> You're my heaven. </a>
+            </div>
+            
+            <div class="eachAlbum">
+            	<a href="#"> Your body - Single. </a>
+            </div>
+        </div>
+   </div>
+    
+   <div id="copyright">
+   		Copyright @2014 Dhahah.
+   </div>
 </div>
+</div>
+</body>
+</html>

@@ -1,15 +1,20 @@
+<% if signed_in? %>
+	<li><%= link_to "Users", users_path %></li>
+<% else %>
+	
+	<div class="center hero-unit">
+  		<h1>Welcome to the Silveros</h1>
 
-<div class="center hero-unit">
-  <h1>Welcome to the Silveros</h1>
+  	<h2>
+    	This is the Home page for the 
+    	<a href="http://railstutorial.org/"> Silveros </a>
+    	application. 
+    	Sample App.
+  	</h2>
 
-  <h2>
-    This is the Home page for the 
-    <a href="http://railstutorial.org/"> Silveros </a>
-    application. 
-    Sample App.
-  </h2>
+  	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  
+	</div>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
-
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+	<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<% end %>
