@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="images/S-Logo.png"  />
-<link rel="stylesheets" type="text/css" href="stylesheets/stylesheet.css.scss" />
+
+<link rel="shortcut icon" <%= image_tag("S-Logo.png")  %>
+<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/stylesheet.css.scss" />
 <title>Silveros | Connects people, finds your love and makes you happy</title>
-<script type="text/javascript" src="javascripts/jquery-1.10.1.js"> </script>
-<script type="text/javascript" src="javascripts/javascript.js"> </script>
+
+<script type="text/javascript" src="/assets/javascripts/jquery-1.10.1.min.js?body=1"> </script>
+<script type="text/javascript" src="/assets/javascripts/javascript.js?body=1"> </script>
 </head>
 
 <body bgcolor="#d5d5d5">
@@ -15,23 +17,23 @@
 	<div id="header"> <!-- Header contains Search bar, and Silveros logo -->
     	<form action="abc.html" method="post"> <!-- This is the search bar-->
         	<input id="searchBar" type="text" name="searchBar" value="Enter name you want to search..."/>
-        	<input id="searchIcon" type="image" src="images/search-icon.png"/> 
+        	<input id="searchIcon" type="image" <%= image_tag'search-icon.png'%> /> 
         </form>
     </div> <!-- End of header -->
     
     <div id="menuAndPartnerTitle"> <!-- This contains Menu bar and some text for partner title -->
     	<div id="menuCategories">	<!-- This is menu bar -->
             <div id="myMenu">
-            	<li class="menu"> <a href="#"> Home </a> </li>
+            	<li class="menu"> <a href="#1"> Home </a> </li>
                 <li class="menu"> <a href="#"> Message </a> </li>
                 <li class="menu"> <a href="#"> Friends </a> </li>
-                <li class="menu"> <a href="#"> About </a> </li>
-                <li class="community"> <a href="#"> <img src="images/Community.png" /> </a> </li>
+                <li class="menu"> <a href="#about"> About </a> </li>
+                <li class="community"> <a href="#"> <%= image_tag("Community.png")%> </a> </li>
                 <li> <a href="#"> Community </a> </li>
             </div>
             
             <div id="partnerTitle">
-            	<li style="margin-left: 100px; padding-top: 4px;"> <a href="#"> <img src="images/Partner-title.png" /> </a> </li>
+            	<li style="margin-left: 100px; padding-top: 4px;"> <a href="#"> <%= image_tag('Partner-title.png') %> </a> </li>
             	<li style="padding-left: 5px;"> <a href="#"> Partner </a> </li>
             </div>
         </div>
@@ -50,7 +52,7 @@
                 </div>
                 
                 <div class="myAvatar">
-                	<a href="#"> <img src="images/myAvatar.jpg" /> </a>
+                	<a href="#"><%= image_tag("myAvatar.jpg") %></a>
                 </div>
             </div>
             
@@ -67,14 +69,14 @@
                 </div>
                 
                 <div id="postButton">
-                	<img src="images/post-button.png" />
+                	<%= image_tag("post-button.png") %>
                 </div>
             </div>
             
             <div id="updatedStatus">
             	<div class="updatedStatusTitle">
                 	<div class="updatedStatusAvatar">
-                    	<img src="images/myAvatar.jpg" />
+                    	<%= image_tag("myAvatar.jpg") %>
                     </div>
                     <div class="updatedStatusName">
                     	— Christina.
@@ -103,7 +105,7 @@
                 </div>
                 
                 <div id="partnerAvatar">
-                    <a href="#"> <img src="images/Partner-avatar.png" /> </a>
+                    <a href="#"> <%= image_tag("Partner-avatar.png") %></a>
                 </div>   
             </div>
             
@@ -133,43 +135,43 @@
             </div>
         </div> <!-- End of partner area -->
     </div> <!-- End of Workspace -->
-    <img style="margin-left: 1px" src="images/separate-line.png" /> <!-- This is the Black and red line at the bottom of the page -->
+    <img style="margin-left: 1px" <%= image_tag("separate-line.png") %> <!-- This is the Black and red line at the bottom of the page -->
     <div id="footer">
         <div id="slideShow"> <!-- This is slide to show smoe picture of user -->
             <div class="leftArrow">
-                <img src="images/left-arrow.png" />
+                <%= image_tag("left-arrow.png") %>
             </div>
             <div class="photos">
                 <div class="each">
-                	<a href="#"><img src="images/photo1.jpg" /></a>
+                	<a href="#"> <%= image_tag("photo1.jpg") %></a>
                 </div>
                 <div class="each">
-                	<a href="#"><img src="images/photo2.jpg" /></a>
+                	<a href="#"><%= image_tag("photo2.jpg") %></a>
                 </div>
                 <div class="each">
-                	<a href="#"><img src="images/photo3.jpg" /></a>
+                	<a href="#"><%= image_tag("photo3.jpg") %></a>
                 </div>
                 <div class="each">
-                	<a href="#"><img src="images/photo4.jpg" /></a>
+                	<a href="#"><%= image_tag("photo4.jpg") %></a>
                 </div>
                 
                 <!-- ............... -->
                 
                 <div class="eachNext">
-                	<a href="#"><img src="images/photo1-2.jpg" /></a>
+                	<a href="#"><%= image_tag("photo1-2.jpg") %></a>
                 </div>
                 <div class="eachNext">
-                	<a href="#"><img src="images/photo2-2.jpg" /></a>
+                	<a href="#"><%= image_tag("photo2-2.jpg") %></a>
                 </div>
                 <div class="eachNext">
-                	<a href="#"><img src="images/photo3-2.jpg" /></a>
+                	<a href="#"><%= image_tag("photo3-2.jpg") %></a>
                 </div>
                 <div class="eachNext">
-                	<a href="#"><img src="images/photo4-2.jpg" /></a>
+                	<a href="#"><%= image_tag("photo4-2.jpg") %></a>
                 </div>
             </div>
             <div class="rightArrow">
-                <img src="images/right-arrow.png" />
+                <%= image_tag("right-arrow.png") %>
             </div>
         </div> <!-- End of slideShow -->
         
