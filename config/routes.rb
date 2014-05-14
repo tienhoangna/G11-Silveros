@@ -3,7 +3,8 @@ SampleApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root  'static_pages#home'
-  match '/edituser', to: 'users#edit', via: 'get'
+  match '/user', to: 'static_pages#profile', via: 'get'
+  match '/edit_user', to: 'users#edit', via: 'get'
   match '/home',    to: 'static_pages#home',     via: 'get'
   match '/help',    to: 'static_pages#help',     via: 'get'
   match '/about',   to: 'static_pages#about',    via: 'get'
