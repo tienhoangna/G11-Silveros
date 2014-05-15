@@ -9,7 +9,7 @@ $(document).ready(function(e) {
 	
 	$(".typingArea textarea").blur(function(e){
 		$(this).css("display", "none");
-		$(".typingArea").animate({height: "55px"}).css("background", "url(images/typing-area.png)").css("background-repeat", "no-repeat");
+		$(".typingArea").animate({height: "55px"}).css("background", image-url("typing-area.png")).css("background-repeat", "no-repeat");
 		$("#all").css("height", "1510px");
 	})
 	
