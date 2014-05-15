@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(e) {
     $(".typingArea").click(function(e) {
-        $(this).animate({height: "122px"}).css("background", "url(images/typing-area2.png)").css("background-repeat", "no-repeat");
+        $(this).animate({height: "122px"}).css("background", image-url("typing-area2.png")).css("background-repeat", "no-repeat");
 		$(".typingArea textarea").css("display", "block");
 		document.getElementById("typing").focus();
 		$("#all").css("height", "1580px");
