@@ -1,20 +1,19 @@
 <% if signed_in? %>
-	<li><%= link_to "Users", users_path %></li>
+  <li><%= link_to "Users", users_path %></li>
 <% else %>
-	
-	<div class="center hero-unit">
-  		<h1>Welcome to the Silveros</h1>
+  <br></br>
 
-  	<h2>
-    	This is the Home page for the 
-    	<a href="http://railstutorial.org/"> Silveros </a>
-    	application. 
-    	Sample App.
-  	</h2>
+  <h3> => You want to find your true love?</h3>
+  <h3> => You want to keep in touch with your friend?</h3>
+  <h3> => You want to get some tips to flirt someone?</h3> 
 
-  	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  <br></br>
+  <div class="center hero-unit">
+      <h1>Welcome to the Silveros</h1>
+      <br> </br>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
   
-	</div>
+  </div>
 
-	<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+  
 <% end %>
