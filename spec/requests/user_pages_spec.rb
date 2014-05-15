@@ -41,5 +41,47 @@ describe "UserPages" do
     
   end
 
+  describe "edit" do
+    let(:user) { FactoryGirl.create(:user) }
+    before { visit edit_user_path(user) }
+
+    describe "page" do
+      it { should have_content("Update your profile") }
+      it { should have_title("Edit user") }
+      it { should have_link('change', href: 'http://gravatar.com/emails') }
+    end
+
+    describe "with invalid information" do
+      before { click_button "Save changes" }
+
+      it { should have_content('error') }
+    end
+  end
+
+  describe "index" do
+    before do
+      signin_path FactoryGirl.create(:user)
+      FactoryGirl.create(:user, name: "Huy", email: "huy@gmail.com")
+      FactoryGirl.create(:user, name: "Anh", email: "anh@gmail.com")
+      visit user_path
+    end
+
+    it { should have_title('All users') }
+    it { should have_content('All users') }
+
+    describe "pagination" do
+
+      before(:all) { 10.times { FactoryGirl.create(:user) } }
+      after(:all)  { User.delete_all }
+
+      it { should have_selector('div.pagination') }
+
+      it "should list each user" do
+        User.paginate(page: 1).each do |user|
+          expect(page).to have_selector('li', text: user.name)
+        end
+      end
+    end
+  end
 
 end
