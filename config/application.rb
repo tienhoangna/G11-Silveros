@@ -26,6 +26,6 @@ module SampleApp
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
-    config.assets.precompile += ['admin.js', 'admin.css', 'swfObject.js', 'admin.scss' ]
+    config.assets.precompile += ['admin.js', 'admin.css', 'swfObject.js']
   end
 end
