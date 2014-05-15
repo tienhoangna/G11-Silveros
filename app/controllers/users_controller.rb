@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)  #not final implementation
   	if @user.save
       flash[:success] = "Welcome to the Silveros"
-  		redirect_to @user
+  		redirect_back_or @user
   	else
   		render 'new'
   	end
