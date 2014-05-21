@@ -14,24 +14,25 @@
 <body bgcolor="#d5d5d5">
 <div id="all">
 <div id="wrapper">
-	<div id="header"> <!-- Header contains Search bar, and Silveros logo -->
-    	<form action="abc.html" method="post"> <!-- This is the search bar-->
+	<!--
+    <div id="header">
+    	<form action="abc.html" method="post">
         	<input id="searchBar" type="text" name="searchBar" value="Enter name you want to search..."/>
         	<input id="searchIcon" type="image" <%= image_tag'search-icon.png'%> /> 
         </form>
-    </div> <!-- End of header -->
+    </div>
     
-    <div id="menuAndPartnerTitle"> <!-- This contains Menu bar and some text for partner title -->
-    	<div id="menuCategories">	<!-- This is menu bar -->
+    <div id="menuAndPartnerTitle">
+    	<div id="menuCategories">
             <div id="myMenu">
             	<li class="menu"> <a href="#1"> Home </a> </li>
                 <li class="menu"> <a href="#"> Message </a> </li>
                 <li class="menu"> <a href="#"> Friends </a> </li>
-                <li class="menu"> <a href="#about"> About </a> </li>
+                <li class="menu"> <a <%= link_to "About", about_path %> </a> </li>
                 <li class="community"> <a href="#"> <%= image_tag("Community.png")%> </a> </li>
                 <li> <a href="#"> Community </a> </li>
             </div>
-            
+
             <div id="partnerTitle">
             	<li style="margin-left: 100px; padding-top: 4px;"> <a href="#"> <%= image_tag('Partner-title.png') %> </a> </li>
             	<li style="padding-left: 5px;"> <a href="#"> Partner </a> </li>
@@ -39,8 +40,10 @@
         </div>
     </div>
     
-    <div id="spaceFromTop"> <!-- There's nothing here, it's just a white space --> </div>
+    <div id="spaceFromTop"> </div>
     
+    -->
+
     <div id="workSpace"> <!-- This contains area for updating status, Updated status area of user and something of partner -->
     	<div id="mine"> <!-- This is the area for user -->
         	<div id="coverPhoto"> 
