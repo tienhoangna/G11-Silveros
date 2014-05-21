@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def create 
   	@user = User.new(user_params)  #not final implementation
   	if @user.save
-      flash[:success] = "Welcome to the Silveros"
+      flash[:success] = "Welcome to Silveros"
   		redirect_to @user
   	else
   		render 'new'
