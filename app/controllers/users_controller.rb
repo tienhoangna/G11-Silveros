@@ -16,16 +16,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-<<<<<<< HEAD
-  def create 
-  	@user = User.new(user_params)  #not final implementation
-  	if @user.save
-      flash[:success] = "Welcome to the Silveros"
-  		redirect_to @user
-  	else
-  		render 'new'
-  	end
-=======
   def create
     @user = User.new(user_params)
     if @user.save
@@ -35,7 +25,6 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
->>>>>>> master
   end
 
   def edit
@@ -73,4 +62,5 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
-  end
+
+end
